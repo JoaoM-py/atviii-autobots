@@ -1,4 +1,4 @@
-package com.autobots.automenager.cadastro;
+package com.autobots.automanager.cadastro;
 
 import java.util.Set;
 

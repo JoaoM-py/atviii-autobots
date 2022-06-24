@@ -1,4 +1,4 @@
-package com.autobots.automenager.cadastro;
+package com.autobots.automanager.cadastro;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
