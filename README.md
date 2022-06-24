@@ -19,7 +19,7 @@ Adiconar capacidades ao sistema para lidar com as novas informações referentes
 | :open_file_folder: src/main/ .../ entidades                | Arquivos para definição dos atributos de cada entidade          |
 | :open_file_folder: src/main/ .../ enumeracoes              | Arquivos para enumeracao de costantes                           |
 | :open_file_folder: src/main/ .../ repositorios             | Arquivo para utilização do JPA nas entidades do projeto         |
-| :open_file_folder: src/main/ .../ selecionadores           | Arquivos para metodo especifico (selecionar dados)             |
+| :open_file_folder: src/main/ .../ selecionadores           | Arquivos para metodo especifico (selecionar dados)              |
 | :page_facing_up: src/main/ .../ AutoanagerApplication.java | Arquivo principal do projeto                                    |
 | :open_file_folder: src/main/ resources/                    | Arquivos para configurações globais do projeto                  |
-| :page_facing_up: pom.xml                                   | Arquivo usado gerenciar as dependencias do projeto              |
+| :page_facing_up: pom.xml                                   | Arquivo usado para gerenciar as dependencias do projeto         |
