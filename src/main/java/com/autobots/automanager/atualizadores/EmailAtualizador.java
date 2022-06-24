@@ -1,6 +1,7 @@
 package com.autobots.automanager.atualizadores;
 
-import java.util.List;
+
+import java.util.Set;
 
 import com.autobots.automanager.entitades.Email;
 
@@ -16,7 +17,7 @@ public class EmailAtualizador {
 		}
 	}
 
-	public void atualizar(List<Email> emails, List<Email> atualizacoes) {
+	public void atualizar(Set<Email> emails, Set<Email> atualizacoes) {
 		for (Email atualizacao : atualizacoes) {
 			for (Email email : emails) {
 				if (atualizacao.getId() != null) {

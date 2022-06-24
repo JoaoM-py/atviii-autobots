@@ -1,6 +1,6 @@
 package com.autobots.automanager.atualizadores;
 
-import java.util.List;
+import java.util.Set;
 
 import com.autobots.automanager.entitades.Veiculo;
 
@@ -28,7 +28,7 @@ public class VeiculoAtualizador {
 		}
 	}
 
-	public void atualizar(List<Veiculo> veiculos, List<Veiculo> atualizacoes) {
+	public void atualizar(Set<Veiculo> veiculos, Set<Veiculo> atualizacoes) {
 		for (Veiculo atualizacao : atualizacoes) {
 			for (Veiculo veiculo : veiculos) {
 				if (atualizacao.getId() != null) {

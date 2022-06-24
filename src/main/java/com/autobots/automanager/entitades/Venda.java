@@ -1,8 +1,12 @@
 package com.autobots.automanager.entitades;
 
+
 import java.util.ArrayList;
 import java.util.Date;
+
 import java.util.List;
+
+
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -43,4 +47,5 @@ public class Venda extends RepresentationModel<Venda>{
 	private List<Servico> servicos = new ArrayList<>();
 	@OneToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
 	private Veiculo veiculo;
+
 }

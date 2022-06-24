@@ -1,6 +1,7 @@
 package com.autobots.automanager.atualizadores;
 
-import java.util.List;
+
+import java.util.Set;
 
 import com.autobots.automanager.entitades.Documento;
 
@@ -26,7 +27,7 @@ public class DocumentoAtualizador {
 		}
 	}
 
-	public void atualizar(List<Documento> documentos, List<Documento> atualizacoes) {
+	public void atualizar(Set<Documento> documentos, Set<Documento> atualizacoes) {
 		for (Documento atualizacao : atualizacoes) {
 			for (Documento documento : documentos) {
 				if (atualizacao.getId() != null) {

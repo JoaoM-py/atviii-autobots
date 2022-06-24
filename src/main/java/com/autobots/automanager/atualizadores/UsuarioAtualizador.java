@@ -10,6 +10,7 @@ public class UsuarioAtualizador {
 	private EmailAtualizador emailAtualizador = new EmailAtualizador();
 	private VeiculoAtualizador veiculoAtualizador = new VeiculoAtualizador();
 	private MercadoriaAtualizador mercadoriaAtualizador = new MercadoriaAtualizador();
+	private VendaAtualizador vendaAtualizador = new VendaAtualizador();
 
 
 
@@ -24,6 +25,10 @@ public class UsuarioAtualizador {
 		if (!(atualizacao.getPerfis() == null)) {
 			usuario.setPerfis(atualizacao.getPerfis());
 		}
+		
+		if (!(atualizacao.getVendas() == null)) {
+			usuario.setVendas(atualizacao.getVendas());
+		}
 	}
 
 	public void atualizar(Usuario usuario, Usuario atualizacao) {
@@ -33,6 +38,7 @@ public class UsuarioAtualizador {
 		telefoneAtualizador.atualizar(usuario.getTelefones(), atualizacao.getTelefones());
 		emailAtualizador.atualizar(usuario.getEmails(), atualizacao.getEmails());
 		veiculoAtualizador.atualizar(usuario.getVeiculos(), atualizacao.getVeiculos());
+		vendaAtualizador.atualizar(usuario.getVendas(), atualizacao.getVendas());
 		mercadoriaAtualizador.atualizar(usuario.getMercadorias(), atualizacao.getMercadorias());
 	}
 }

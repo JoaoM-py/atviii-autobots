@@ -1,7 +1,10 @@
 package com.autobots.automanager.entitades;
 
-import java.util.ArrayList;
-import java.util.List;
+
+
+import java.util.HashSet;
+
+import java.util.Set;
 
 
 import javax.persistence.CascadeType;
@@ -37,21 +40,21 @@ public class Usuario extends RepresentationModel<Usuario> {
 	@Column
 	private String nomeSocial;
 	@ElementCollection(fetch = FetchType.LAZY )
-	private List<PerfilUsuario> perfis = new ArrayList<>();
+	private Set<PerfilUsuario> perfis = new HashSet<>();
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.LAZY )
-	private List<Telefone> telefones = new ArrayList<>();
+	private Set<Telefone> telefones = new HashSet<>();
 	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
 	private Endereco endereco;
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.LAZY )
-	private List<Documento> documentos = new ArrayList<>();
+	private Set<Documento> documentos = new HashSet<>();
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.LAZY )
-	private List<Email> emails = new ArrayList<>();
+	private Set<Email> emails = new HashSet<>();
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.LAZY )
-	private List<Credencial> credenciais = new ArrayList<>();
+	private Set<Credencial> credenciais = new HashSet<>();
 	@OneToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, fetch = FetchType.LAZY )
-	private List<Mercadoria> mercadorias = new ArrayList<>();
+	private Set<Mercadoria> mercadorias = new HashSet<>();
 	@OneToMany(fetch = FetchType.LAZY , cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	private List<Venda> vendas = new ArrayList<>();
+	private Set<Venda> vendas = new HashSet<>();
 	@OneToMany(fetch = FetchType.LAZY , cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	private List<Veiculo> veiculos = new ArrayList<>();
+	private Set<Veiculo> veiculos = new HashSet<>();
 }
