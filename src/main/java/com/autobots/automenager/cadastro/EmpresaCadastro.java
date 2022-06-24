@@ -1,4 +1,4 @@
-package com.autobots.automaneger.cadastro;
+package com.autobots.automenager.cadastro;
 
 import java.util.ArrayList;
 import java.util.Date;
